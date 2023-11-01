@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-
-gcc -Wall -Wextra -Werror -pedantic $1 $2 binary_trees.h
+rm a.out
+gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c main.c $1
 ./a.out

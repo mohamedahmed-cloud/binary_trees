@@ -1,9 +1,9 @@
 #ifndef YOusef
 #define Yousef
 
+#include <stdlib.h>
+#include <stddef.h>
 
-binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
-binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
 
 /**
  * struct binary_tree_s - Binary tree node
@@ -22,6 +22,15 @@ struct binary_tree_s
 };
 
 typedef struct binary_tree_s binary_tree_t;
+typedef struct binary_tree_s bst_t;
+typedef struct binary_tree_s avl_t;
+typedef struct binary_tree_s heap_t;
 
+
+void binary_tree_print(const binary_tree_t *);
+/**
+ * main Functions
+*/
+binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
 #endif
