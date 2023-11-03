@@ -43,7 +43,7 @@ int get_height(const binary_tree_t *tree, int initial, int max)
 size_t binary_tree_height(const binary_tree_t *tree)
 {
 	int max = -1;
-	
+
 	if (tree == NULL)
 		return (0);
 
